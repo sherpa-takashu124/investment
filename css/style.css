@@ -153,7 +153,7 @@ body {
 }
 
 .expert_area {
-    height: 80vh;
+    height: auto;
     clear: both;
     display: flex;
     align-items: center;
@@ -165,8 +165,10 @@ body {
 
 .expert_area div {
     width: 30%;
-    height: 38vh;
+    height: auto;
     padding: auto;
+    margin-bottom: 20px;
+    min-height: 200px;
     background-color: white;
     border-radius: 5px;
     -webkit-box-shadow: -1px 4px 9px -1px rgba(0, 0, 0, 0.75);
@@ -222,8 +224,15 @@ body {
     color: black;
 }
 
+.footer_container .social_media ul {
+    clear: both;
+    background: #764ba2;
+}
+
 .footer_container .social_media h5 {
     clear: both;
+    margin-top: 30px;
+    text-align: center;
 }
 
 .footer_container .social_media ul li {
@@ -247,4 +256,50 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.footer_container .investment_btn {
+    background-color: #764ba2;
+    border: 0px;
+    text-align: center;
+    align-self: baseline;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    -webkit-box-shadow: -1px 4px 5px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 4px 5px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 4px 5px -1px rgba(0, 0, 0, 0.75);
+}
+
+@media screen and (max-width: 820px) {
+    .upper_banner_container .right_container {
+        width: 100%;
+    }
+    .upper_banner_container .left_container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .expert_area div {
+        width: 47%;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .expert_area div {
+        width: 95%;
+        height: 250px;
+    }
+    .footer_container ul {
+        width: 100%;
+    }
+    .footer_container .social_media ul {
+        width: 100%;
+        margin: 0 0 0 50%;
+        transform: translateX(-40%);
+    }
+    .middle_container .character_div {
+        flex-flow: column;
+    }
 }

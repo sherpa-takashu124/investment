@@ -162,7 +162,7 @@ middleEastData = {
 lostData = {
     type: 'line',
     data: {
-        labels: ['UnitedHealth Group', 'Centene Crop', 'Clorox CO', 'Campbell Soup CO', 'Anthem Inc'],
+        labels: ['UnitedHealth GRP', 'Centene Crop', 'Clorox CO', 'Campbell Soup CO', 'Anthem Inc'],
         datasets: [{
             label: 'Company Who running on Loss by %',
             showLine: false,
@@ -189,6 +189,7 @@ lostData = {
         }]
     },
     options: {
+        responsive: true,
         scales: {
             yAxes: [{
                 ticks: {
