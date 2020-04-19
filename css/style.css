@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-image: url(/images/bg.svg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 20px 16px;
+}
+
+body {
+    background-color: rgba(240, 248, 255, 0.5);
+    overflow-y: auto;
+    height: 100%;
+    border-radius: 5px;
+    position: relative;
+}
+
+.upper_banner_container {
+    width: 100%;
+    height: auto;
+}
+
+.upper_banner_container .left_container {
+    margin-top: 50px;
+    height: 80vh;
+    float: left;
+    width: 50%;
+    background-color: transparent;
+    position: relative;
+}
+
+.upper_banner_container .left_container .container_text_div {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.upper_banner_container .left_container .conatiner_heading {
+    text-align: center;
+}
+
+.upper_banner_container .left_container .container_text {
+    text-align: center;
+    width: 70%;
+    margin: 20px auto;
+}
+
+.upper_banner_container .right_container {
+    margin-top: 50px;
+    width: 50%;
+    height: 80vh;
+    float: right;
+    position: relative;
+    padding: 20px;
+}
+
+.upper_banner_container .right_container img {
+    width: 40%;
+    position: absolute;
+}
+
+.upper_banner_container .right_container img:hover {
+    width: 41%;
+    position: absolute;
+}
+
+.upper_banner_container .right_container .first {
+    top: 10%;
+    right: 10%;
+}
+
+.upper_banner_container .right_container .second {
+    width: 50%;
+    top: 40%;
+    right: 10%;
+}
+
+.upper_banner_container .right_container .third {
+    top: 20%;
+    left: 5%;
+}
+
+.upper_banner_container .right_container .forth {
+    bottom: 10%;
+    left: 10%;
+}
+
+.middle_container {
+    clear: both;
+    background-color: aliceblue;
+    position: relative;
+}
+
+.middle_container h2 {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
+.middle_container .btn_expert {
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: linear-gradient(to top, #5f72bd 0%, #9b23ea 100%);
+    border: 0px;
+    -webkit-box-shadow: 0px 15px 14px -9px rgba(230, 247, 239, 1);
+    -moz-box-shadow: 0px 15px 14px -9px rgba(230, 247, 239, 1);
+    box-shadow: 0px 15px 14px -9px rgba(230, 247, 239, 1);
+}
+
+.middle_container .character_div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.middle_container .character_div div {
+    text-align: center;
+    margin: 10px;
+}
+
+.middle_container .character_div div img {
+    background-color: #764ba2;
+    width: 150px;
+    padding: 50px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.middle_container .character_div div h3 {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    font-size: 30px;
+}
+
+.middle_container .character_div div p {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    font-size: 16px;
+}
+
+.expert {
+    text-align: center;
+    background-color: white;
+}
+
+.expert_area {
+    height: 80vh;
+    clear: both;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+}
+
+.expert_area div {
+    width: 30%;
+    height: 38vh;
+    padding: auto;
+    background-color: white;
+    border-radius: 5px;
+    -webkit-box-shadow: -1px 4px 9px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 4px 9px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 4px 9px -1px rgba(0, 0, 0, 0.75);
+}
+
+
+/* chart */
+
+#cryptochart {
+    width: 100%;
+    height: 100%;
+}
