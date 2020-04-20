@@ -1,24 +1,22 @@
 <!DOCTYPE html>
-
 <html class="no-js">
-<!--<![endif]-->
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>Contact Us</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/contact.css">
 
 </head>
 
 <body>
-    <section class="upper_banner_container">
-
+    <section class="contact_container">
         <header class="header">
             <img class="logo" src="/images/test_logo.svg" alt="logo">
             <input class="menu_btn" type="checkbox" name="" id="menu_btn">
@@ -54,99 +52,63 @@
 
         </header>
 
-        <div class="right_container">
-            <img class="first" src="/images/svg1.svg" alt="" srcset="">
-            <img class="second" src="/images/svg2.svg" alt="" srcset="">
-            <img class="third" src="/images/svg3.svg" alt="" srcset="">
-            <img class="forth" src="/images/svg4.svg" alt="" srcset="">
-        </div>
-        <div class="left_container">
-            <div class="container_text_div">
-                <h3 class="conatiner_heading">Lorem, ipsum dolor.</h3>
-                <p class="container_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem animi eum rem iusto, qui vero omnis consequuntur magni perspiciatis odio ducimus distinctio eos possimus corrupti adipisci, at voluptatem optio eveniet?</p>
+        <div class="contact_form_container">
+            <div class="contact_card">
+                <h3>Contact us</h3>
 
+                <br>
+
+                <span><i class="fa fa-map-marker "></i> 3rd Avenue, New York, <br> &nbsp; 11999 New York </span>
+                <br>
+                <span><i class="fa fa-envelope"></i><a href="mailto:">
+                    investmentForum@if.com
+                </a></span>
+                <br>
+                <span> <i class="fa fa-phone"></i><a href="tel:+1">800-000-1234</a></span>
+                <br>
+
+                <span> <i class=" fa fas fa-fax"></i>   <a href="tel:+1">800-087-3241</a> </span>
+
+                <br>
+
+
+
+
+            </div>
+
+            <div class="contact_form">
+                <form>
+                    <div class="form-group">
+                        <label for="full_name">Full Name</label>
+                        <input type="text" class="form-control" id="full_name" aria-describedby="emailHelp" placeholder="Jhon Cameron">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="email_address">Email address</label>
+                        <input type="email" class="form-control" id="email_address" aria-describedby="emailHelp" placeholder="example@email.com">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" class="form-control" id="subject" aria-describedby="emailHelp">
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="3"></textarea>
+                    </div>
+
+
+
+                    <button type="submit" class=" btn btn-success">Submit</button>
+                </form>
             </div>
         </div>
 
 
-
-
     </section>
-
-    <section class="middle_container">
-        <br>
-        <div class="character_div">
-
-            <div>
-                <img src="/images/lock.svg" alt="" class="svg">
-                <h3>Safe</h3>
-                <p>Find qualified, independent and regulated professionals</p>
-
-            </div>
-
-
-            <div>
-                <img src="/images/smart.svg" alt="">
-                <h3>Smart</h3>
-                <p>Quickly connect to over 27,000 experts</p>
-            </div>
-
-            <div>
-                <img src="/images/free.svg" alt="">
-                <h3>Free</h3>
-                <p>We don’t charge you anything for our matching service</p>
-            </div>
-
-
-        </div>
-        <br>
-
-        <h2>We’ve helped more than 10 million people to find unbiased advice</h2>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <button type="button" class="btn_expert btn btn-success">Find me an expert</button>
-
-    </section>
-
-    <section class="expert">
-        <br>
-        <h2>Expert Area</h2>
-        <p>Explore our treasury of tips and guides for every stage of life</p>
-        <br>
-        <section class="expert_area">
-            <div class="crypto">
-                <canvas id="cryptochart">
-                </canvas>
-            </div>
-            <div class="stock">
-                <canvas id="stockchart">
-                </canvas>
-            </div>
-            <div class="morgage">
-                <canvas id="morgagechart">
-                </canvas>
-            </div>
-            <div class="middleEast">
-                <canvas id="middleEastchart">
-                </canvas>
-            </div>
-
-            <div class="losses">
-                <canvas id="lossCompany">
-                </canvas>
-            </div>
-
-            <div class="profiter">
-                <canvas id="profitComapny">
-                </canvas>
-            </div>
-
-        </section>
-    </section>
-    <br>
 
     <footer class="footer">
         <div class="footer_container">
@@ -205,10 +167,7 @@
     </footer>
 
 
-
-
-    <script src="/js/app.js"></script>
-
+    <script src="" async defer></script>
 </body>
 
 </html>

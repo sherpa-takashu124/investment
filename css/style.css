@@ -12,7 +12,7 @@ html {
 }
 
 body {
-    background-color: rgba(240, 248, 255, 0.5);
+    background-color: rgba(240, 248, 255, 0.7);
     overflow-y: auto;
     height: 100%;
     border-radius: 5px;
@@ -291,8 +291,13 @@ body {
         width: 95%;
         height: 250px;
     }
-    .footer_container ul {
+    .footer_container {
         width: 100%;
+        flex-flow: column;
+        align-items: center;
+    }
+    .footer_container ul li {
+        text-align: center;
     }
     .footer_container .social_media ul {
         width: 100%;
