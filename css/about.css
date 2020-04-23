@@ -1,0 +1,48 @@
+.first {
+    margin: 100px 20px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.first .text {
+    width: 100%;
+    flex: 2;
+}
+
+.first img {
+    width: 50%;
+}
+
+.second {
+    margin: 100px 20px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.second .text {
+    width: 100%;
+    margin-left: 10px;
+}
+
+.second img {
+    width: 50%;
+}
+
+@media screen and (max-width: 820px) {
+    .first {
+        flex-flow: column-reverse;
+        justify-content: space-evenly;
+    }
+    .second {
+        flex-flow: column;
+    }
+    .first img {
+        width: 100%;
+    }
+    .second img {
+        width: 100%;
+    }
+    .text {
+        margin-top: 20px;
+    }
+}
