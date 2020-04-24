@@ -119,7 +119,6 @@ header ul a:hover {}
         display: block;
         padding: 20px 20px;
         float: right;
-        border: 1px solid red;
     }
     .header .menu_btn:checked~.menu {
         max-height: 240px;
