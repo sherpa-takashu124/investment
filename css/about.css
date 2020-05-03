@@ -7,18 +7,20 @@ body {
     display: flex;
     flex-wrap: nowrap;
     padding: 20px;
+    justify-content: space-between;
 }
 
 .first .text {
     display: inline-block;
-    width: 100%;
+    width: 65%;
     text-align: left;
-    flex: 2;
+    word-wrap: break-word;
 }
 
 .first img {
     width: 30%;
     margin: 10px;
+    padding: 16px;
 }
 
 .second {
@@ -26,17 +28,20 @@ body {
     display: flex;
     flex-wrap: nowrap;
     padding: 20px;
+    justify-content: space-between;
 }
 
 .second .text {
     display: inline-block;
-    width: 100%;
+    width: 65%;
     margin-left: 10px;
+    word-wrap: break-word;
 }
 
 .second img {
     width: 30%;
     margin: 10px;
+    padding: 16px;
 }
 
 .team_container {
@@ -131,6 +136,12 @@ body {
     .second img {
         width: 40%;
     }
+    .first .text {
+        width: 55%;
+    }
+    .second .text {
+        width: 55%;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -140,6 +151,13 @@ body {
     }
     .second {
         flex-flow: column;
+    }
+    .second .text {
+        width: 100%;
+        display: block;
+    }
+    .first .text {
+        width: 100%;
     }
     .first img {
         width: 100%;

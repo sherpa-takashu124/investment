@@ -10,42 +10,47 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/nav.css">
-    <link rel="stylesheet" href="/css/faq.css">
+    <link rel="stylesheet" href="../library/css/bootstrap.mini.css">
+    <link rel="stylesheet" href="../library/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/faq.css">
 </head>
 
 <body>
     <section class="upper_container">
         <header class="header">
-            <img class="logo" src="/images/test_logo.svg" alt="logo">
+            <img class="logo" src="../images/test_logo.svg" alt="logo">
             <input class="menu_btn" type="checkbox" name="" id="menu_btn">
             <label class="menu_icon" for="menu_btn"> <span class="nav_icon" ></span> </label>
 
             <div class="btn_div">
 
-                <input class="login_btn" type="button" value="LOG IN">
-                <input class="signup_btn" type="button" value="SIGN UP">
+                <input class="login_btn btn btn-primary" onClick="location.href='login.html'" type="button" value="LogIn / SignUp">
 
             </div>
 
             <ul class="menu">
                 <li>
-                    <a href="">Home</a>
+                    <a href="../index.html">Home</a>
+
+                    <span class="active_underline"></span>
                 </li>
                 <li>
-                    <a href="">Rules</a>
+                    <a href="">Today</a>
+                    <span class="active_underline"></span>
                 </li>
                 <li>
-                    <a href="">Support</a>
+                    <a href="about.html">About</a>
+                    <span class="active_underline"></span>
+                </li>
+                <li class="active_link">
+                    <a href="faq.html">FAQ</a>
+                    <span class="active_underline"></span>
                 </li>
                 <li>
-                    <a href="">Help</a>
-                </li>
-                <li>
-                    <a href="">Contact Us</a>
+                    <a href="contact.html">Contact Us</a>
+                    <span class="active_underline"></span>
                 </li>
 
 
@@ -69,68 +74,69 @@
 
         <div class="card_container">
 
-            <div class="cards">
+            <div class="cards" onClick="location.href='login.html'">
 
                 <i class=" fas fa-cog"></i>
                 <div class="text_div">
                     <h3>Getting Started</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos!</p>
+                    <p>What You Need to Get Started. <br> Open My Account.</p>
+
 
                 </div>
 
             </div>
 
-            <div class="cards">
+            <div class="cards" onClick="location.href='login.html'">
                 <i class=" fas fas fa-user-friends"></i>
                 <div class="text_div">
                     <h3>User Account</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos!</p>
+                    <p>What types of account can I open with FA <br> How long does it take to open FA account</p>
 
                 </div>
 
             </div>
 
-            <div class="cards">
+            <div class="cards" onClick="location.href='market.html'">
 
                 <i class="fa fa-cogs"></i>
                 <div class="text_div">
-                    <h3>Product Features</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos!</p>
+                    <h3>Options Trading</h3>
+                    <p>What is an Options? <br> What are the option Trading Levels and their terms and Conditions?</p>
 
                 </div>
 
             </div>
 
 
-            <div class="cards">
+            <div class="cards" onClick="location.href='market.html'">
 
-                <i class="fas fa-user-lock"></i>
+                <i class=" fas fa-hand-holding"></i>
                 <div class="text_div">
-                    <h3>Security Options</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos!</p>
+                    <h3>Trading</h3>
+                    <p>Why some stock are not available to trade suddenly? <br>What is a Good-Faith Violation(GFV)</p>
 
                 </div>
 
             </div>
 
 
-            <div class="cards">
+            <div class="cards" onClick="location.href='about.html'">
 
                 <i class=" fas far fa-credit-card"></i>
                 <div class="text_div">
-                    <h3>Payment Options</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos!</p>
+                    <h3>Payment and Fees</h3>
+                    <p>Commission and Fees. <br> Isn't the commission free? Why was my Trade charges $0.02 <br> What is the interest on margin trading?</p>
 
                 </div>
 
             </div>
 
-            <div class="cards">
+            <div class="cards" onClick="location.href='market.html'">
 
-                <i class=" fas fa-envelope"></i>
+                <i class=" fas fa-dollar-sign"></i>
                 <div class="text_div">
-                    <h3>Getting Started</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos!</p>
+                    <h3>Marketing</h3>
+                    <p>What sorts of market data can I use for free with FA. <br> How can I tell if the stock quotes I am looking is real-time or delayed?</p>
 
                 </div>
 
@@ -151,34 +157,10 @@
                 <li>
                     <div class="question_answer_div" id="question_answer_div">
 
-                        <h5 class="ques" id="ques"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                        <h5 class="ques" id="ques"> What types of fees are associated with security transfers?</h5>
 
-                        <p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores tempora dignissimos exercitationem saepe. Unde at laudantium ex et nisi, alias consequatur voluptates ullam magni, ducimus accusantium aliquid similique illo id.</p>
-
-                        <i class="fa fa-angle-down" aria-hidden="true" id="indicator"></i>
-
-
-                    </div>
-                </li>
-                <li>
-                    <div class="question_answer_div" id="question_answer_div">
-
-                        <h5 class="ques"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
-
-                        <p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores tempora dignissimos exercitationem saepe. Unde at laudantium ex et nisi, alias consequatur voluptates ullam magni, ducimus accusantium aliquid similique illo id.</p>
-
-                        <i class="fa fa-angle-down" aria-hidden="true" id="indicator"></i>
-
-
-                    </div>
-                </li>
-
-                <li>
-                    <div class="question_answer_div" id="question_answer_div">
-
-                        <h5 class="ques" id="ques"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
-
-                        <p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores tempora dignissimos exercitationem saepe. Unde at laudantium ex et nisi, alias consequatur voluptates ullam magni, ducimus accusantium aliquid similique illo id.</p>
+                        <p class="answer">If you transfer securities over from other brokers to Webull, we will not charge any fees. However, the contra broker may charge fees. If you transfer securities out of your Webull account to other brokerage platforms, our clearing
+                            firm will charge you an outgoing fee of $75.</p>
 
                         <i class="fa fa-angle-down" aria-hidden="true" id="indicator"></i>
 
@@ -188,9 +170,9 @@
                 <li>
                     <div class="question_answer_div" id="question_answer_div">
 
-                        <h5 class="ques"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                        <h5 class="ques"> Commission and Fees.</h5>
 
-                        <p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores tempora dignissimos exercitationem saepe. Unde at laudantium ex et nisi, alias consequatur voluptates ullam magni, ducimus accusantium aliquid similique illo id.</p>
+                        <p class="answer">Webull does NOT charge commission for U.S. equities and ETFs, or fees to open/maintain an account. <br> Note: There are fees charged to all sell orders by SEC and FINRA, the regulatory agencies.</p>
 
                         <i class="fa fa-angle-down" aria-hidden="true" id="indicator"></i>
 
@@ -201,9 +183,10 @@
                 <li>
                     <div class="question_answer_div" id="question_answer_div">
 
-                        <h5 class="ques" id="ques"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                        <h5 class="ques" id="ques"> What are the fees for transferring funds?</h5>
 
-                        <p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores tempora dignissimos exercitationem saepe. Unde at laudantium ex et nisi, alias consequatur voluptates ullam magni, ducimus accusantium aliquid similique illo id.</p>
+                        <p class="answer">ACH is free of charge, but you can only transfer a maximum of $50,000 from your bank account to your Webull account a day. <br> U.S. Domestic Wire transfers have fees associated with them, but you can transfer a much larger amount
+                            into your brokerage account.</p>
 
                         <i class="fa fa-angle-down" aria-hidden="true" id="indicator"></i>
 
@@ -213,9 +196,37 @@
                 <li>
                     <div class="question_answer_div" id="question_answer_div">
 
-                        <h5 class="ques"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                        <h5 class="ques"> How long does the stock transfer take?</h5>
 
-                        <p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores tempora dignissimos exercitationem saepe. Unde at laudantium ex et nisi, alias consequatur voluptates ullam magni, ducimus accusantium aliquid similique illo id.</p>
+                        <p class="answer">Stock transfer usually takes 5-7 business days to complete. However, delays may occur if your outgoing account type differs from your Webull account. Delays can also occur if you have any activity in your outgoing account (unsettled
+                            stocks, ACH transactions, etc). Please contact us if your transfer is pending for more than 7 business days.</p>
+
+                        <i class="fa fa-angle-down" aria-hidden="true" id="indicator"></i>
+
+
+                    </div>
+                </li>
+
+                <li>
+                    <div class="question_answer_div" id="question_answer_div">
+
+                        <h5 class="ques" id="ques"> Can I transfer stocks from a cash account to a margin account, or vice versa?</h5>
+
+                        <p class="answer">Inconsistent account types in your Webull account and your outgoing account can cause delays in the transfer. Please switch the account type before sending your stock transfer request. If not, your transfer may be delayed, and
+                            you will not be able to trade as normal. </p>
+
+                        <i class="fa fa-angle-down" aria-hidden="true" id="indicator"></i>
+
+
+                    </div>
+                </li>
+                <li>
+                    <div class="question_answer_div" id="question_answer_div">
+
+                        <h5 class="ques"> What is an ACATS stock transfer?</h5>
+
+                        <p class="answer">ACATS (Automated Customer Account Transfer Service) is a system that automates and standardizes procedures for the transfer of assets in a customer account from one brokerage firm and bank to another. The service reduces operating
+                            costs and speeds up transaction settlements.</p>
 
                         <i class="fa fa-angle-down" aria-hidden="true" id="indicator"></i>
 
@@ -267,10 +278,10 @@
             <div class="social_media">
 
                 <ul class="social">
-                    <li><img src="/images/instagram.svg" alt="instagram"></li>
-                    <li><img src="/images/twitter.svg" alt="twitter"></li>
-                    <li><img src="/images/facebook.svg" alt="facebook"></li>
-                    <li><img src="/images/linkedin.svg" alt="linkdin"></li>
+                    <li><img src="../images/instagram.svg" alt="instagram"></li>
+                    <li><img src="../images/twitter.svg" alt="twitter"></li>
+                    <li><img src="../images/facebook.svg" alt="facebook"></li>
+                    <li><img src="../images/linkedin.svg" alt="linkdin"></li>
                 </ul>
                 <br>
                 <h5>Are you looking for Investment ?</h5>
@@ -288,7 +299,7 @@
     </footer>
 
 
-    <script src="/js/faq.js"></script>
+    <script src="../js/faq.js"></script>
 </body>
 
 </html>

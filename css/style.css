@@ -1,26 +1,74 @@
+@font-face {
+    font-family: "Roboto-regular";
+    src: url("../font/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto-thin";
+    src: url("../font/Roboto-Thin.ttf");
+}
+
+@font-face {
+    font-family: "Roboto-bold";
+    src: url("../font/Roboto-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Roboto-medium";
+    src: url("../font/Roboto-Medium.ttf");
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
+/* basic styles */
+
 a {
     text-decoration: none;
 }
 
+input:focus {
+    color: transparent;
+}
+
+a:visited {
+    color: gray;
+}
+
+a:focus {
+    color: dimgrey;
+}
+
+a:hover {
+    transform: scale(1.1);
+}
+
 html {
-    background-image: url(/images/bg.svg);
+    background: url(../images/bg.svg);
+    background-image: url(../images/bg.svg);
     background-size: cover;
     background-attachment: fixed;
     padding: 20px 16px;
+    overflow-x: hidden;
 }
 
 body {
+    width: 100%;
     background-color: rgba(240, 248, 255, 0.7);
     overflow-y: auto;
     height: 100%;
     border-radius: 5px;
     position: relative;
+    overflow-x: hidden;
+    font-family: "Roboto-thin", sans-serif, Arial, Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: #000;
 }
 
 .upper_banner_container {
@@ -45,12 +93,28 @@ body {
 
 .upper_banner_container .left_container .conatiner_heading {
     text-align: center;
+    font-size: 30px;
+    font-weight: 600;
 }
 
 .upper_banner_container .left_container .container_text {
     text-align: center;
     width: 70%;
     margin: 20px auto;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.upper_banner_container .left_container .create_btn {
+    background: #764ba2;
+    padding: 4px 10px 4px 10px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    border-color: transparent;
+    color: white;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 
 .upper_banner_container .right_container {
@@ -119,6 +183,7 @@ body {
 }
 
 .middle_container .character_div {
+    display: -webkit-flex;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -159,6 +224,7 @@ body {
 .expert_area {
     height: auto;
     clear: both;
+    display: -webkit-flex;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -193,6 +259,7 @@ body {
     width: 100%;
     background-color: aliceblue;
     display: flex;
+    display: -webkit-flex;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-around;

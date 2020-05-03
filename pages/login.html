@@ -10,42 +10,51 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/nav.css">
-    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="../library/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../library/css/bootstrap.mini.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/login.css">
+
+
 </head>
+
 
 <body>
     <section class="upper_container">
+
         <header class="header">
-            <img class="logo" src="/images/test_logo.svg" alt="logo">
+            <img class="logo" src="../images/test_logo.svg" alt="logo">
             <input class="menu_btn" type="checkbox" name="" id="menu_btn">
             <label class="menu_icon" for="menu_btn"> <span class="nav_icon" ></span> </label>
 
             <div class="btn_div">
 
-                <input class="login_btn" type="button" value="LOG IN">
-                <input class="signup_btn" type="button" value="SIGN UP">
+                <input class="login_btn btn btn-primary" onClick="location.href='login.html'" type="button" value="LogIn / SignUp">
 
             </div>
 
             <ul class="menu">
                 <li>
-                    <a href="">Home</a>
+                    <a href="../index.html">Home</a>
+
+                    <span class="active_underline"></span>
                 </li>
                 <li>
-                    <a href="">Rules</a>
+                    <a href="">Today</a>
+                    <span class="active_underline"></span>
                 </li>
                 <li>
-                    <a href="">Support</a>
+                    <a href="about.html">About</a>
+                    <span class="active_underline"></span>
                 </li>
                 <li>
-                    <a href="">Help</a>
+                    <a href="faq.html">FAQ</a>
+                    <span class="active_underline"></span>
                 </li>
                 <li>
-                    <a href="">Contact Us</a>
+                    <a href="contact.html">Contact Us</a>
+                    <span class="active_underline"></span>
                 </li>
 
 
@@ -53,7 +62,10 @@
 
 
         </header>
+
         <br>
+
+
 
         <div class="form_container">
 
@@ -132,8 +144,6 @@
 
         </div>
 
-
-
         <br>
     </section>
     <footer class="footer">
@@ -172,10 +182,10 @@
             <div class="social_media">
 
                 <ul class="social">
-                    <li><img src="/images/instagram.svg" alt="instagram"></li>
-                    <li><img src="/images/twitter.svg" alt="twitter"></li>
-                    <li><img src="/images/facebook.svg" alt="facebook"></li>
-                    <li><img src="/images/linkedin.svg" alt="linkdin"></li>
+                    <li><img src="../images/instagram.svg" alt="instagram"></li>
+                    <li><img src="../images/twitter.svg" alt="twitter"></li>
+                    <li><img src="../images/facebook.svg" alt="facebook"></li>
+                    <li><img src="../images/linkedin.svg" alt="linkdin"></li>
                 </ul>
                 <br>
                 <h5>Are you looking for Investment ?</h5>
@@ -191,9 +201,8 @@
 
         </div>
     </footer>
+    <script src="../js/login.js"></script>
 
-
-    <script src="/js/login.js"></script>
 </body>
 
 </html>
