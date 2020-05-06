@@ -4,13 +4,8 @@ var morgageCanvas = document.getElementById('morgagechart').getContext('2d');
 var middleEastCanvas = document.getElementById('middleEastchart').getContext('2d');
 var lossCompanyCanvas = document.getElementById('lossCompany').getContext('2d');
 var profitCompanyCanvas = document.getElementById('profitComapny').getContext('2d');
-var market_chart = document.getElementById('market_chart').getContext('2d');
-var click = document.getElementById('tt');
-alert('sdnkdn')
-click.addEventListener('click', () => {
-    alert('sdnkdn')
-    market_chart.classList.add("HEHEHE");
-})
+
+
 
 
 
@@ -251,51 +246,9 @@ profitData = {
     }
 }
 
-profitData1 = {
-    type: 'line',
-    data: {
-        labels: ['HollyFrontier Corp', 'Marathon P corp', 'Cititzens Fin Grp INC', 'Comerica INC', 'Valero Energy CP'],
-        datasets: [{
-            label: 'Company Who running on Profit by %',
-            showLine: false,
-            pointRadius: 10,
-            data: [17.12, 15.95, 15.95, 15.16, 10.43],
-            fill: false,
-            backgroundColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-            ],
-            borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-            ],
-            borderWidth: 1
-        }]
-    },
-    options: {
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero: false
-                }
-            }]
-        }
-
-    }
-}
-
 var myCryptoChart = new Chart(cryptoCanvas, cryptoData);
 var myStockChart = new Chart(stockCanvas, stockData);
 var myMorgageChart = new Chart(morgageCanvas, currencyData);
 var mymiddleeast = new Chart(middleEastCanvas, middleEastData)
 var mylostData = new Chart(lossCompanyCanvas, lostData);
 var myProfitData = new Chart(profitCompanyCanvas, profitData);
-var newwchart = new Chart(market_chart, profitData1)

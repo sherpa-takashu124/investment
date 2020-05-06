@@ -7,10 +7,10 @@
 }
 
 header .logo {
-    width: 50px;
+    width: 180px;
     height: auto;
     float: left;
-    margin: auto;
+    margin: 16px 10px 16px;
 }
 
 .header .menu_btn {
@@ -25,7 +25,7 @@ header .logo {
     list-style: none;
     float: right;
     line-height: 40px;
-    margin: auto 25% auto 0;
+    margin: auto 20% auto 0;
 }
 
 .header ul li {
@@ -41,7 +41,8 @@ header .logo {
     color: black;
     text-align: center;
     font-size: 18px;
-    font-family: "Roboto-bold", sans-serif, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-family: "Roboto-thin", sans-serif, Arial, Helvetica, sans-serif;
 }
 
 .header ul li .active_underline {
@@ -84,22 +85,9 @@ header ul a:hover {}
     background: #764ba2;
     background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     padding: 4px 10px 4px 10px;
-    font-family: "pubg", Arial, Helvetica, sans-serif;
     border-radius: 20px;
     letter-spacing: 1px;
     font-size: 16px;
-    border-color: transparent;
-}
-
-.header .btn_div .signup_btn {
-    background-color: aquamarine;
-    padding: 4px 10px 4px 10px;
-    font-family: "pubg", Arial, Helvetica, sans-serif;
-    border-radius: 20px;
-    letter-spacing: 1px;
-    font-size: 16px;
-    color: aliceblue;
-    margin-left: 10px;
     border-color: transparent;
 }
 
@@ -138,7 +126,7 @@ header ul a:hover {}
     }
     .header .btn_div {
         position: absolute;
-        top: 0%;
+        top: 10px;
         right: 8%;
         transform: translateY(10px);
         right: 8%;
@@ -146,11 +134,17 @@ header ul a:hover {}
     .header .menu_icon {
         display: block;
         padding: 20px 20px;
-        margin-top: 8px;
+        margin-top: 16px;
         float: right;
     }
+    header .logo {
+        width: 160px;
+        height: auto;
+        float: left;
+        margin: 16px 10px 16px;
+    }
     .header .menu_btn:checked~.menu {
-        max-height: 240px;
+        max-height: 310px;
     }
     .header .menu_icon .nav_icon {
         position: relative;
