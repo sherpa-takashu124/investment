@@ -1,0 +1,263 @@
+body {
+    background: #f9f9fc;
+}
+
+.table thead.thead-dark th {
+    background-color: #764ba2;
+}
+
+.top_data {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 100px 16px 16px;
+}
+
+.top_data .barchart {
+    position: relative;
+    width: 60%;
+    height: auto;
+    text-align: center;
+    padding: 10px;
+    background-color: azure;
+    -webkit-box-shadow: 2px 3px 26px 0px rgba(87, 82, 87, 1);
+    -moz-box-shadow: 2px 3px 26px 0px rgba(87, 82, 87, 1);
+    box-shadow: 2px 3px 26px 0px rgba(87, 82, 87, 1);
+}
+
+.top_data .barchart #market_chart {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+}
+
+.top_data .table_container {
+    width: 35%;
+    height: auto;
+    background-color: azure;
+    text-align: center;
+    padding: 10px;
+    -webkit-box-shadow: 2px 3px 26px 0px rgba(87, 82, 87, 1);
+    -moz-box-shadow: 2px 3px 26px 0px rgba(87, 82, 87, 1);
+    box-shadow: 2px 3px 26px 0px rgba(87, 82, 87, 1);
+}
+
+.top_data .table_container table td {
+    color: green;
+}
+
+.top_data .table_container .minus {
+    color: red;
+}
+
+.second_data {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 16px;
+}
+
+.second_data .topgainer {
+    width: 32%;
+    height: auto;
+    background-color: azure;
+    text-align: center;
+    padding: 10px;
+    -webkit-box-shadow: 2px 3px 26px 0px rgba(87, 82, 87, 1);
+    -moz-box-shadow: 2px 3px 26px 0px rgba(87, 82, 87, 1);
+    box-shadow: 2px 3px 26px 0px rgba(87, 82, 87, 1);
+}
+
+.second_data table td {
+    color: green;
+}
+
+.second_data .minus {
+    color: red;
+}
+
+.second_data .toploser {
+    width: 32%;
+    height: auto;
+    background-color: azure;
+    padding: 10px;
+    text-align: center;
+    -webkit-box-shadow: 2px 3px 26px 0px rgba(87, 82, 87, 1);
+    -moz-box-shadow: 2px 3px 26px 0px rgba(87, 82, 87, 1);
+    box-shadow: 2px 3px 26px 0px rgba(87, 82, 87, 1);
+}
+
+.second_data .mostactive {
+    width: 32%;
+    height: auto;
+    background-color: azure;
+    padding: 10px;
+    text-align: center;
+    -webkit-box-shadow: 2px 3px 26px 0px rgba(87, 82, 87, 1);
+    -moz-box-shadow: 2px 3px 26px 0px rgba(87, 82, 87, 1);
+    box-shadow: 2px 3px 26px 0px rgba(87, 82, 87, 1);
+}
+
+.third_data {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 16px;
+}
+
+.third_data .earning {
+    width: 47%;
+    height: auto;
+    background-color: azure;
+    padding: 10px;
+    text-align: center;
+    -webkit-box-shadow: 2px 3px 26px 0px rgba(87, 82, 87, 1);
+    -moz-box-shadow: 2px 3px 26px 0px rgba(87, 82, 87, 1);
+    box-shadow: 2px 3px 26px 0px rgba(87, 82, 87, 1);
+}
+
+.third_data .dividend_per {
+    width: 47%;
+    height: auto;
+    background-color: azure;
+    padding: 10px;
+    text-align: center;
+    -webkit-box-shadow: 2px 3px 26px 0px rgba(87, 82, 87, 1);
+    -moz-box-shadow: 2px 3px 26px 0px rgba(87, 82, 87, 1);
+    box-shadow: 2px 3px 26px 0px rgba(87, 82, 87, 1);
+}
+
+.pi_group {
+    text-align: center;
+    margin: 16px;
+}
+
+.pi_group .hot_title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.pi_group .hot_industries {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.pi_group .hot_industries .p1 {
+    width: 32%;
+    height: auto;
+    background-color: azure;
+    padding: 10px;
+    text-align: center;
+    -webkit-box-shadow: 2px 3px 26px 0px rgba(87, 82, 87, 1);
+    -moz-box-shadow: 2px 3px 26px 0px rgba(87, 82, 87, 1);
+    box-shadow: 2px 3px 26px 0px rgba(87, 82, 87, 1);
+}
+
+.pi_group .hot_industries .p1 #p1 {
+    text-align: center;
+}
+
+.pi_group .hot_industries .p2 {
+    width: 32%;
+    background-color: azure;
+    padding: 10px;
+    text-align: center;
+    -webkit-box-shadow: 2px 3px 26px 0px rgba(87, 82, 87, 1);
+    -moz-box-shadow: 2px 3px 26px 0px rgba(87, 82, 87, 1);
+    box-shadow: 2px 3px 26px 0px rgba(87, 82, 87, 1);
+}
+
+.pi_group .hot_industries .p3 {
+    width: 32%;
+    height: auto;
+    background-color: azure;
+    padding: 10px;
+    text-align: center;
+    -webkit-box-shadow: 2px 3px 26px 0px rgba(87, 82, 87, 1);
+    -moz-box-shadow: 2px 3px 26px 0px rgba(87, 82, 87, 1);
+    box-shadow: 2px 3px 26px 0px rgba(87, 82, 87, 1);
+}
+
+.pi_group .increment {
+    color: green;
+}
+
+@media (max-width: 1080px) {
+    .top_data {
+        flex-direction: column;
+        height: 100%;
+    }
+    .top_data .barchart {
+        width: 100%;
+        height: 550px;
+        margin-bottom: 45px;
+    }
+    .top_data .table_container {
+        width: 100%;
+    }
+    .second_data {
+        flex-direction: column;
+    }
+    .second_data .topgainer,
+    .second_data .toploser,
+    .second_data .mostactive {
+        width: 100%;
+        margin-bottom: 45px;
+    }
+    .pi_group .hot_industries {
+        flex-direction: column;
+    }
+    .pi_group .hot_industries .p1,
+    .pi_group .hot_industries .p2,
+    .pi_group .hot_industries .p3 {
+        width: 75%;
+        margin: auto auto 45px auto;
+    }
+}
+
+@media (max-width: 840px) {
+    .third_data {
+        flex-direction: column;
+    }
+    .third_data .earning {
+        width: 100%;
+        margin-bottom: 45px;
+    }
+    .third_data .dividend_per {
+        width: 100%;
+    }
+}
+
+@media (max-width: 750px) {
+    .top_data .barchart {
+        width: 100%;
+        height: 450px;
+    }
+    .pi_group .hot_industries .p1,
+    .pi_group .hot_industries .p2,
+    .pi_group .hot_industries .p3 {
+        width: 95%;
+        margin: auto auto 45px auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .top_data .barchart {
+        width: 100%;
+        height: 380px;
+    }
+}
+
+@media (max-width: 500px) {
+    .top_data .barchart {
+        width: 100%;
+        height: 300px;
+    }
+}

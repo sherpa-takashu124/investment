@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html class="no-js">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title></title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../library/css/bootstrap.mini.css">
+<link rel="stylesheet" href="../library/fontawesome/css/all.min.css">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/nav.css">
+<link rel="stylesheet" href="../css/market.css">
+<script src="../library/js/chart.mini.js"></script>
+
+</head>
+
+<body>
+    <section class="upper_container">
+        <header class="header">
+            <img class="logo" src="../images/test_logo.svg" alt="logo">
+            <input class="menu_btn" type="checkbox" name="" id="menu_btn">
+            <label class="menu_icon" for="menu_btn"> <span class="nav_icon" ></span> </label>
+
+            <div class="btn_div">
+
+                <input class="login_btn btn btn-primary" onClick="location.href='login.html'" type="button" value="LogIn / SignUp">
+
+            </div>
+
+            <ul class="menu">
+                <li>
+                    <a href="../index.html">Home</a>
+
+                    <span class="active_underline"></span>
+                </li>
+                <li class="active_link">
+                    <a href="">Market</a>
+                    <span class="active_underline"></span>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                    <span class="active_underline"></span>
+                </li>
+                <li>
+                    <a href="faq.html">FAQ</a>
+                    <span class="active_underline"></span>
+                </li>
+                <li>
+                    <a href="contact.html">Contact Us</a>
+                    <span class="active_underline"></span>
+                </li>
+
+
+            </ul>
+
+
+        </header>
+    </section>
+    <section class="top_data">
+
+
+        <div class="barchart">
+            <h3>Major Advancer Company</h3>
+            <canvas id="market_chart">
+        </canvas>
+
+        </div>
+
+        <div class="table_container">
+            <h3>Extra Hour Ranking</h3>
+            <table class="table w-100 p-1">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Company</th>
+                        <th scope="col">Last price</th>
+                        <th scope="col">change</th>
+                        <th scope="col"> % change</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">CPSH tech</th>
+                        <td>1.22</td>
+                        <td class="minus">-0.07</td>
+                        <td>+47.01%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Nucana</th>
+                        <td>5.36</td>
+                        <td>+0.15</td>
+                        <td>+41.79%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Micro Vision</th>
+                        <td>1.300</td>
+                        <td>+0.2</td>
+                        <td>+17.69%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Airdis PH</th>
+                        <td>8.20</td>
+                        <td>+0.32</td>
+                        <td>+19.69%</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Mercado Libre</th>
+                        <td>620.29</td>
+                        <td>+13.3</td>
+                        <td>+27.77%</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Medi fast</th>
+                        <td>2.90</td>
+                        <td class="minus">-1.9</td>
+                        <td>+17.69%</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+
+    </section>
+    <br>
+
+
+    <section class="second_data">
+
+        <div class="topgainer">
+            <h3>Top Gainer ></h3>
+
+            <table class="table table-striped w-100 p-1">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Company</th>
+                        <th scope="col">Last price</th>
+                        <th scope="col">change</th>
+                        <th scope="col"> % change</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Portolo PH</th>
+                        <td>17.85</td>
+                        <td>+10.09</td>
+                        <td>+130.03%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Nucana</th>
+                        <td>5.36</td>
+                        <td>+0.15</td>
+                        <td>+41.79%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Clean Spark</th>
+                        <td>3.05</td>
+                        <td>+1.69</td>
+                        <td>+124.67%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Airdis PH</th>
+                        <td>8.20</td>
+                        <td>+0.32</td>
+                        <td>+19.69%</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Ritter PH</th>
+                        <td>0.64</td>
+                        <td>+029</td>
+                        <td>+87.68%</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">GLAN LTD</th>
+                        <td>13.90</td>
+                        <td>4.76</td>
+                        <td>+67.33%</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+        </div>
+
+        <div class="toploser">
+            <h3>Top Losers ></h3>
+
+            <table class="table table-striped w-100 p-1">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Company</th>
+                        <th scope="col">Last price</th>
+                        <th scope="col">change</th>
+                        <th scope="col"> % change</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Capital Fin</th>
+                        <td class="minus">2.8</td>
+                        <td class="minus">-10.09</td>
+                        <td class="minus">-25.27%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Markin Tx </th>
+                        <td class="minus">0.9</td>
+                        <td class="minus">-0.23</td>
+                        <td class="minus">-24.78%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Jet BLue</th>
+                        <td class="minus">1.59</td>
+                        <td class="minus">-3.89</td>
+                        <td class="minus">-22.89%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Alaska Air</th>
+                        <td class="minus">1.8</td>
+                        <td class="minus">-1.09</td>
+                        <td class="minus">-9.27%</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Zedge Tx</th>
+                        <td class="minus">0.89</td>
+                        <td class="minus">-11.119</td>
+                        <td class="minus">-65.27%</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">GAP TX</th>
+                        <td class="minus">2.8</td>
+                        <td class="minus">-13.39</td>
+                        <td class="minus">-21.07%</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <div class="mostactive">
+
+            <h3>Most Active ></h3>
+            <table class="table table-striped w-100 p-1">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Company</th>
+                        <th scope="col">Last price</th>
+                        <th scope="col">change</th>
+                        <th scope="col"> % change</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Markin Tx </th>
+                        <td class="minus">0.9</td>
+                        <td class="minus">-0.23</td>
+                        <td class="minus">-24.78%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Nucana</th>
+                        <td>5.36</td>
+                        <td>+0.15</td>
+                        <td>+41.79%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Zedge Tx</th>
+                        <td class="minus">0.89</td>
+                        <td class="minus">-11.119</td>
+                        <td class="minus">-65.27%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Airdis PH</th>
+                        <td>8.20</td>
+                        <td>+0.32</td>
+                        <td>+19.69%</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">GAP TX</th>
+                        <td class="minus">2.8</td>
+                        <td class="minus">-13.39</td>
+                        <td class="minus">-21.07%</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">GLAN LTD</th>
+                        <td>13.90</td>
+                        <td>4.76</td>
+                        <td>+67.33%</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+
+    </section>
+
+    <br>
+
+    <section class="third_data">
+
+        <div class="earning">
+            <h3>Earning ></h3>
+
+            <table class="table table-striped w-100 p-1">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Company</th>
+                        <th scope="col">Release Date</th>
+                        <th scope="col">EPS Estimate</th>
+                        <th scope="col">Last Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Square</th>
+                        <td>05/05/2020</td>
+                        <td>0.34</td>
+                        <td>79.98</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Pay Pal </th>
+                        <td>05/23/2020</td>
+                        <td>0.67</td>
+                        <td>89.08</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">GM Motor</th>
+                        <td>05/12/2020</td>
+                        <td>0.22</td>
+                        <td>21.23</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">FitBIT</th>
+                        <td>05/11/2020</td>
+                        <td>0.98</td>
+                        <td>454.09</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Twillo SMS</th>
+                        <td>05/21/2020</td>
+                        <td>12.23</td>
+                        <td>76.28</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Gilead Science</th>
+                        <td>05/05/2020</td>
+                        <td>1.34</td>
+                        <td>125.98</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+        </div>
+
+        <div class="dividend_per">
+
+            <h3>Dividend Per Share > </h3>
+            <table class="table table-striped w-100 p-1">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Company</th>
+                        <th scope="col">Dividend Per Share</th>
+                        <th scope="col">EX-Div Date</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Silicon Mtn Tec</th>
+                        <td>0.3475</td>
+                        <td>05/05/2020</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">Intel</th>
+                        <td>0.56</td>
+                        <td>05/06/2020</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Portman Ridge Finance</th>
+                        <td>0.09</td>
+                        <td>05/09/2020</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">First Energy</th>
+                        <td>0.90</td>
+                        <td>05/10/2020</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">SUNOCO LP</th>
+                        <td>0.87</td>
+                        <td>05/11/2020</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">KB Home</th>
+                        <td>0.46</td>
+                        <td>05/16/2020</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+
+    </section>
+    <br>
+
+    <section class="pi_group">
+        <h3 class="hot_title">Hot Industries</h3>
+        <div class="hot_industries">
+            <div class="p1">
+                <h5>Recreational Products <span class="increment"> + 3.75%</span></h5>
+                <canvas id="p1"></canvas>
+
+
+
+            </div>
+
+            <div class="p2">
+                <h5>Personal Services <span class="increment"> + 3.48%</span></h5>
+                <canvas id="p2"></canvas>
+
+            </div>
+
+            <div class="p3">
+                <h5>Finance Market <span class="increment"> + 2.12%</span></h5>
+                <canvas id="p3"></canvas>
+
+            </div>
+        </div>
+
+    </section>
+
+    <br>
+
+    <footer class="footer">
+        <div class="footer_container">
+            <ul class="">
+                <li>
+                    <span>Find me an Adviser</span>
+                </li>
+                <li> <a href="">Financial advisers near me</a> </li>
+                <li> <a href=""> Mortgage brokers near me</a></li>
+                <li><a href="">Find an accountant</a></li>
+                <li><a href="">Get matched to a suitable adviser</a></li>
+            </ul>
+            <ul class="">
+                <li>
+                    <span>what I need to about</span>
+                </li>
+                <li><a href="">News</a></li>
+                <li><a href="">Independent Financial Adviser</a></li>
+                <li><a href="">Stock Adviser</a></li>
+                <li><a href="">Crypto Adviser</a></li>
+            </ul>
+
+            <ul>
+                <li>
+                    <span>About Company</span>
+                </li>
+
+                <li><a href="">About us</a></li>
+                <li><a href="">Contact us</a></li>
+                <li><a href="">Press & Media</a></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="">Legals</a></li>
+            </ul>
+
+            <div class="social_media">
+
+                <ul class="social">
+                    <li><img src="../images/instagram.svg" alt="instagram"></li>
+                    <li><img src="../images/twitter.svg" alt="twitter"></li>
+                    <li><img src="../images/facebook.svg" alt="facebook"></li>
+                    <li><img src="../images/linkedin.svg" alt="linkdin"></li>
+                </ul>
+                <br>
+                <h5>Are you looking for Investment ?</h5>
+                <br>
+
+                <button type="button" class=" investment_btn btn btn-primary">Investment Now</button>
+
+                <br>
+                <br><br>
+            </div>
+
+
+
+        </div>
+    </footer>
+
+
+    <script src="../js/market.js"></script>
+</body>
+
+</html>
