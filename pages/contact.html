@@ -12,13 +12,14 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/contact.css">
+    <script src="../js/contact.js"></script>
 
 </head>
 
 <body>
     <section class="contact_container">
         <header class="header">
-            <img class="logo" src="../images/test_logo.svg" alt="logo">
+            <img class="logo" src="../images/logo-i.png" onClick="location.href='../index.html'" alt="logo">
             <input class="menu_btn" type="checkbox" name="" id="menu_btn">
             <label class="menu_icon" for="menu_btn"> <span class="nav_icon" ></span> </label>
 
@@ -35,7 +36,7 @@
                     <span class="active_underline"></span>
                 </li>
                 <li>
-                    <a href="">Today</a>
+                    <a href="market.html">Market</a>
                     <span class="active_underline"></span>
                 </li>
                 <li>
@@ -66,7 +67,7 @@
                 <span><i class="fa fa-map-marker "></i> 3rd Avenue, New York, <br> &nbsp; 11999 New York </span>
                 <br>
                 <span><i class="fa fa-envelope"></i><a href="mailto:">
-                    investmentForum@if.com
+                    investmentforum@ni.com
                 </a></span>
                 <br>
                 <span> <i class="fa fa-phone"></i><a href="tel:+1">800-000-1234</a></span>
@@ -82,32 +83,39 @@
             </div>
 
             <div class="contact_form">
-                <form>
+                <form id="contact_form">
                     <div class="form-group">
                         <label for="full_name">Full Name</label>
-                        <input type="text" class="form-control" id="full_name" aria-describedby="emailHelp" placeholder="Jhon Cameron">
+                        <input type="text" class="form-control" id="full_name" placeholder="Jhon Cameron" required>
 
                     </div>
                     <div class="form-group">
                         <label for="email_address">Email address</label>
-                        <input type="email" class="form-control" id="email_address" aria-describedby="emailHelp" placeholder="example@email.com">
+                        <input type="email" class="form-control" id="email_address" aria-describedby="emailHelp" placeholder="example@email.com" required>
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
 
                     <div class="form-group">
+                        <label for="phone_number">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone_number" placeholder="(nnn) nnn-nnnn" pattern="^\d{10}$|^(\(d{3}\)\s*)?\d{3}[\s]?\d{4}$" required>
+
+                    </div>
+
+                    <div class="form-group">
                         <label for="subject">Subject</label>
-                        <input type="text" class="form-control" id="subject" aria-describedby="emailHelp">
+                        <input type="text" class="form-control" id="subject" required>
 
                     </div>
 
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea class="form-control" id="message" rows="3"></textarea>
+                        <textarea class="form-control" id="message" rows="3" required></textarea>
                     </div>
 
 
 
-                    <button type="submit" class=" btn btn-success">Submit</button>
+                    <button type="submit" class="btn btn-success">Submit</button>
+
                 </form>
             </div>
         </div>
@@ -119,21 +127,21 @@
         <div class="footer_container">
             <ul class="">
                 <li>
-                    <span>Find me an Adviser</span>
+                    <span class="footer_title">Find me an Adviser</span>
                 </li>
-                <li> <a href="">Financial advisers near me</a> </li>
-                <li> <a href=""> Mortgage brokers near me</a></li>
-                <li><a href="">Find an accountant</a></li>
-                <li><a href="">Get matched to a suitable adviser</a></li>
+                <li> <a href="faq.html">Financial advisers near me</a> </li>
+                <li> <a href="about.html"> Mortgage brokers near me</a></li>
+                <li><a href="market.html">Find an accountant</a></li>
+                <li><a href="login.html">Get matched to a suitable adviser</a></li>
             </ul>
             <ul class="">
                 <li>
                     <span>what I need to about</span>
                 </li>
-                <li><a href="">News</a></li>
-                <li><a href="">Independent Financial Adviser</a></li>
-                <li><a href="">Stock Adviser</a></li>
-                <li><a href="">Crypto Adviser</a></li>
+                <li><a href="about.html">News</a></li>
+                <li><a href="contact.html">Independent Financial Adviser</a></li>
+                <li><a href="market.html">Stock Adviser</a></li>
+                <li><a href="contact.html">Crypto Adviser</a></li>
             </ul>
 
             <ul>
@@ -141,26 +149,34 @@
                     <span>About Company</span>
                 </li>
 
-                <li><a href="">About us</a></li>
-                <li><a href="">Contact us</a></li>
-                <li><a href="">Press & Media</a></li>
-                <li><a href="">Careers</a></li>
-                <li><a href="">Legals</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="about.html">Press & Media</a></li>
+                <li><a href="market.html">Careers</a></li>
+                <li><a href="about.html">Legals</a></li>
             </ul>
 
             <div class="social_media">
 
                 <ul class="social">
-                    <li><img src="../images/instagram.svg" alt="instagram"></li>
-                    <li><img src="../images/twitter.svg" alt="twitter"></li>
-                    <li><img src="../images/facebook.svg" alt="facebook"></li>
-                    <li><img src="../images/linkedin.svg" alt="linkdin"></li>
+                    <li onclick="window.open( 'https://www.instagram.com/ ')">
+                        <img src="../images/instagram.svg" alt="instagram">
+                    </li>
+                    <li onclick="window.open( 'https://www.twitter.com/')">
+                        <img src="../images/twitter.svg" alt="twitter">
+                    </li>
+                    <li onclick="window.open('https://www.facebook.com')">
+                        <img src="../images/facebook.svg" alt="facebook">
+                    </li>
+                    <li onclick="window.open('https://www.linkedin.com')">
+                        <img src="../images/linkedin.svg" alt="linkedin">
+                    </li>
                 </ul>
                 <br>
                 <h5>Are you looking for Investment ?</h5>
                 <br>
 
-                <button type="button" class=" investment_btn btn btn-primary">Investment Now</button>
+                <button type="button" onClick="location.href='../pages/market.html'" class=" investment_btn btn btn-primary">Invest Now</button>
 
                 <br>
                 <br><br>
@@ -172,7 +188,6 @@
     </footer>
 
 
-    <script src="" async defer></script>
 </body>
 
 </html>

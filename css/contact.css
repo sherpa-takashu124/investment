@@ -28,9 +28,11 @@
     text-align: center;
     margin-bottom: 10px;
     display: flex;
-    justify-content: flex-start;
+    display: -webkit-flex;
+    justify-content: space-evenly;
     align-items: flex-start;
     flex-flow: column;
+    min-height: 300px;
 }
 
 .contact_card h3 {
@@ -65,9 +67,25 @@
     float: right;
 }
 
+.contact_form button {
+    background-image: linear-gradient(to top, #5f72bd 0%, #9b23ea 100%);
+    border: 0px;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.contact_form button:active:focus {
+    background-image: linear-gradient(to top, #5f72bd 0%, #9b23ea 100%);
+    outline: 0;
+}
+
 @media screen and (max-width: 900px) {
     .contact_form_container {
         display: flex;
+        display: -webkit-flex;
         flex-flow: column;
     }
     .contact_form {

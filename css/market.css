@@ -11,7 +11,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 100px 16px 16px;
+    margin: 150px 16px 16px;
 }
 
 .top_data .barchart {
@@ -146,6 +146,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
