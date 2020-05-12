@@ -86,10 +86,12 @@
 .right {
     display: flex;
     display: -webkit-flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     flex-flow: column;
     height: 100%;
+    padding-top: 10%;
+    padding-bottom: 10%;
     animation: fadeIn ease 1s;
     -webkit-animation: fadeIn ease 1s;
     -moz-animation: fadeIn ease 1s;
@@ -100,7 +102,7 @@
 .left {
     display: flex;
     display: -webkit-flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     flex-flow: column;
     display: none;
