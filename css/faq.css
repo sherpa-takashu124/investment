@@ -186,4 +186,33 @@
         width: 100%;
         padding: 50px 40px;
     }
+    .form-group {
+        width: 80%;
+    }
+    .form-group input:focus {
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width: 500px) {
+    .middle_container .question {
+        width: 100%;
+    }
+    .middle_container {
+        background: #f9f9fc;
+        width: 100%;
+        padding: 50px 10px;
+    }
+    .form-group {
+        width: 90%;
+    }
+    .label_text {
+        font-size: 15px;
+        transform: translateY(-50%);
+    }
+    .active {
+        font-size: 16px;
+        letter-spacing: 1px;
+        top: -2px;
+    }
 }

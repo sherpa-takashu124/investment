@@ -311,6 +311,7 @@ body {
 
 .footer_container .social_media h5 {
     clear: both;
+    margin: auto 5px;
     margin-top: 30px;
     text-align: center;
 }
@@ -402,6 +403,13 @@ body {
         margin: 0 0 0 50%;
         transform: translateX(-40%);
     }
+    .middle_container h2 {
+        width: 80%;
+    }
+    .expert p {
+        width: 90%;
+        margin: auto 5%;
+    }
 }
 
 @media screen and (max-width: 620px) {
@@ -414,6 +422,21 @@ body {
     .expert_area div {
         width: 85%;
         height: auto;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .footer_container .social_media h5 {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .expert_area div {
+        width: 97%;
+        height: 230px;
+    }
+    html {
+        padding: 20px 10px;
+        overflow-x: hidden;
     }
 }
 

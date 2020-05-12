@@ -178,6 +178,23 @@ body {
     }
 }
 
+
+/* for really small size device iphone 5 se*/
+
+@media (max-width: 450px) {
+    .teams .card {
+        width: 95%;
+        height: 490px;
+    }
+    .team_container {
+        clear: both;
+        width: 100%;
+        padding: 20px 5px;
+        background-color: white;
+        text-align: center;
+    }
+}
+
 @media (min-width: 1190px) {
     .teams .card {
         width: 300px;

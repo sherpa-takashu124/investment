@@ -2,6 +2,11 @@ body {
     background: #f9f9fc;
 }
 
+.table {
+    display: table;
+    width: 10%;
+}
+
 .table thead.thead-dark th {
     background-color: #764ba2;
 }
@@ -260,5 +265,62 @@ body {
     .top_data .barchart {
         width: 100%;
         height: 300px;
+    }
+}
+
+@media (max-width: 420px) {
+    .top_data {
+        margin: 100px 8px 8px;
+    }
+    .second_data {
+        margin: 16px 8px 8px;
+    }
+    .second_data .topgainer,
+    .second_data .toploser,
+    .mostactive {
+        padding: 2px;
+    }
+    .third_data {
+        margin: 16px 8px 8px;
+    }
+    .third_data .dividend_per,
+    .third_data .earning {
+        padding: 2px;
+    }
+    .pi_group {
+        margin: 8px;
+    }
+    .pi_group .hot_industries .p1,
+    .pi_group .hot_industries .p2,
+    .pi_group .hot_industries .p3 {
+        width: 100%;
+        margin: auto auto 45px auto;
+        padding: 5px;
+    }
+    .top_data .barchart {
+        width: 100%;
+        height: 250px;
+    }
+    .top_data .table_container {
+        padding: 2px;
+    }
+    table>th,
+    td {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 350px) {
+    table td,
+    th {
+        font-size: 10px;
+    }
+    .pi_group .hot_industries .p1,
+    .pi_group .hot_industries .p2,
+    .pi_group .hot_industries .p3 {
+        width: 100%;
+        margin: auto auto 45px auto;
+        padding: 5px;
+        height: 200px;
     }
 }
