@@ -4,7 +4,7 @@ var morgageCanvas = document.getElementById('morgagechart').getContext('2d');
 var middleEastCanvas = document.getElementById('middleEastchart').getContext('2d');
 var lossCompanyCanvas = document.getElementById('lossCompany').getContext('2d');
 var profitCompanyCanvas = document.getElementById('profitComapny').getContext('2d');
-
+var experPerContainer = document.querySelector('#expert_container')
 
 
 
@@ -54,6 +54,8 @@ stockData = {
         datasets: [{
             label: 'Most Popular Stock',
             data: [282.88, 45.41, 6.88, 1280.53, 178.0],
+            fill: true,
+            pointRadius: 4,
             backgroundColor: [
                 'rgba(255, 99, 132, 1)',
                 'rgba(54, 162, 235, 1)',
@@ -93,6 +95,7 @@ currencyData = {
             label: 'Currencies Rate in Dollar',
             data: [1.09, 1.25, 0.00107, 0.71, 0.07],
             fill: false,
+            pointRadius: 4,
             backgroundColor: [
                 'rgba(255, 99, 132, 1)',
                 'rgba(54, 162, 235, 1)',
@@ -131,6 +134,7 @@ middleEastData = {
         datasets: [{
             label: 'Middle East Market in Dollar',
             data: [2.6, 56, 10, 900],
+            pointRadius: 4,
             fill: false,
             backgroundColor: [
                 'rgba(255, 99, 132, 1)',
@@ -170,8 +174,9 @@ lostData = {
         datasets: [{
             label: 'Company Who running on Loss by %',
             showLine: false,
-            pointRadius: 10,
+            pointRadius: 4,
             data: [2.6, 2.14, 1.52, 1.51, 1.48],
+
             fill: false,
             backgroundColor: [
                 'rgba(255, 99, 132, 1)',
@@ -212,7 +217,7 @@ profitData = {
         datasets: [{
             label: 'Company Who running on Profit by %',
             showLine: false,
-            pointRadius: 10,
+            pointRadius: 4,
             data: [17.12, 15.95, 15.95, 15.16, 10.43],
             fill: false,
             backgroundColor: [
@@ -252,3 +257,23 @@ var myMorgageChart = new Chart(morgageCanvas, currencyData);
 var mymiddleeast = new Chart(middleEastCanvas, middleEastData)
 var mylostData = new Chart(lossCompanyCanvas, lostData);
 var myProfitData = new Chart(profitCompanyCanvas, profitData);
+
+function resize() {
+    console.log(window.innerWidth)
+    if (window.innerWidth == 900 || window.innerWidth == 520 ||
+        window.innerWidth == 620 || window.innerWidth == 720 ||
+        window.innerWidth == 450) {
+        cryptoCanvas.resize();
+        myStockChart.resize();
+        myMorgageChart.resize();
+        mymiddleeast.resize();
+        mylostData.resize();
+        myProfitData.resize();
+
+    } else {
+
+    }
+
+}
+
+window.onresize = resize;
