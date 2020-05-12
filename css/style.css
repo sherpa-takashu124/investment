@@ -236,7 +236,9 @@ body {
     display: -webkit-flex;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    /*for moz & chrome*/
+    -webkit-justify-content: space-evenly !important;
     flex-direction: row;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;

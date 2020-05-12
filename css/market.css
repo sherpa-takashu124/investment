@@ -32,9 +32,7 @@ body {
 }
 
 .top_data .barchart #market_chart {
-    position: absolute;
-    bottom: 0;
-    left: 10px;
+    padding: 10px;
 }
 
 .top_data .table_container {
@@ -271,6 +269,9 @@ body {
 @media (max-width: 420px) {
     .top_data {
         margin: 100px 8px 8px;
+    }
+    .top_data .barchart #market_chart {
+        padding: 5px;
     }
     .second_data {
         margin: 16px 8px 8px;
