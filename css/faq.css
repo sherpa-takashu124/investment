@@ -170,6 +170,7 @@
 
 .middle_container .ask_question_div .question li h5 {
     margin-right: 40px;
+    font-weight: bold;
 }
 
 .middle_container .ask_question_div .question li .show p {
