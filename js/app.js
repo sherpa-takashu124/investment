@@ -263,12 +263,13 @@ function resize() {
     if (window.innerWidth == 900 || window.innerWidth == 520 ||
         window.innerWidth == 620 || window.innerWidth == 720 ||
         window.innerWidth == 450) {
-        cryptoCanvas.resize();
+        myCryptoChart.resize();
         myStockChart.resize();
         myMorgageChart.resize();
         mymiddleeast.resize();
         mylostData.resize();
         myProfitData.resize();
+        console.log('ENTER')
 
     } else {
 
