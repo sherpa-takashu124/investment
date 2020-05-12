@@ -3,36 +3,40 @@ body {
 }
 
 .first {
-    margin: 100px 20px 50px;
+    margin: 100px 16px 50px;
     display: flex;
     display: -webkit-flex;
-    flex-wrap: nowrap;
-    -webkit-flex-wrap: nowrap;
-    padding: 20px;
-    justify-content: space-between;
+    flex-flow: row;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .first .text {
     display: inline-block;
     width: 65%;
-    text-align: left;
+    margin-left: 10px;
     word-wrap: break-word;
 }
 
-.first img {
+.first .img_container {
     width: 30%;
     margin: 10px;
     padding: 16px;
+}
+
+.first .img_container img {
+    width: 100%;
 }
 
 .second {
     margin: 0 20px -50px;
     display: flex;
     display: -webkit-flex;
-    flex-wrap: nowrap;
-    -webkit-flex-wrap: nowrap;
-    padding: 20px;
-    justify-content: space-between;
+    flex-flow: row;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .second .text {
@@ -42,10 +46,14 @@ body {
     word-wrap: break-word;
 }
 
-.second img {
+.second .img_container {
     width: 30%;
     margin: 10px;
     padding: 16px;
+}
+
+.second .img_container img {
+    width: 100%;
 }
 
 .team_container {
@@ -92,9 +100,10 @@ body {
 .teams .card .card_bottom {
     width: 100%;
     height: 65%;
-    padding: 66px 16px;
-    /*  66px because image size 100px halp and 16px gonna be 66*/
+    padding: 66px 10px;
+    /*  66px because image size 100px help and 16px gonna be 66*/
     background-color: azure;
+    font-size: 15px;
 }
 
 .teams .card img {
@@ -138,10 +147,10 @@ body {
 }
 
 @media screen and (max-width: 920px) {
-    .first img {
+    .first .img_container {
         width: 40%;
     }
-    .second img {
+    .second .img_container {
         width: 40%;
     }
     .first .text {
@@ -167,10 +176,10 @@ body {
     .first .text {
         width: 100%;
     }
-    .first img {
+    .first .img_container {
         width: 100%;
     }
-    .second img {
+    .second .img_container {
         width: 100%;
     }
     .text {

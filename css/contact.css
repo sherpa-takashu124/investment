@@ -3,12 +3,14 @@
     height: 100%;
     position: relative;
     overflow: hidden;
+    margin-bottom: 50px;
 }
 
 .contact_form_container {
     width: 100%;
     position: relative;
     padding: 100px 80px;
+    margin-bottom: 100px;
 }
 
 .contact_card {
