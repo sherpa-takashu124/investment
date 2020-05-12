@@ -278,3 +278,7 @@ function resize() {
 }
 
 window.onresize = resize;
+
+if (BrowserDetect.browser.indexOf("explorer") > -1) {
+    document.write('<' + 'link rel="stylesheet" href="../component/explorerStyles.css" />');
+}
