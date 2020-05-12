@@ -277,7 +277,7 @@ body {
     }
     .second_data .topgainer,
     .second_data .toploser,
-    .second .mostactive {
+    .second_data .mostactive {
         padding: 2px;
     }
     .third_data {
